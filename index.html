@@ -85,6 +85,7 @@
         <div id="accountSection" style="display:none;">
             <h2>Cuenta</h2>
             <p>ID: <span id="userId"></span></p>
+            <p>Nombre: <span id="userName"></span></p>
             
             <!-- Verificar Sueldo -->
             <div>
@@ -171,6 +172,7 @@
                 document.getElementById('loginSection').style.display = 'none';
                 document.getElementById('accountSection').style.display = 'block';
                 document.getElementById('userId').textContent = user.id;
+                document.getElementById('userName').textContent = user.name;
             } else {
                 alert('ID o contraseña incorrectos');
             }
