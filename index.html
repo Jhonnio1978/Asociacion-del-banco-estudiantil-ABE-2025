@@ -185,7 +185,7 @@
 
             const user = users.find(user => user.id === id && user.password === password);
             if (user) {
-                document.getElementById('salaryResult').textContent = `Su saldo es: ${user.balance}`;
+                document.getElementById('salaryResult').textContent = `Su saldo es: RD$${user.balance}`;
             } else {
                 document.getElementById('salaryResult').textContent = 'ID o contraseña incorrectos';
             }
